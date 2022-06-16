@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1, initial-scale=1.0">
+    <title>Grid-layout</title>
+    <link rel="stylesheet" href="grid.css"/>
+    <a href = "file:///C:/Users/user/Desktop/flexbox/index.html">index.html</a>
+    <style>
+        {
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:rgb(93, 142, 192);
+    display: flex;
+    place-items: center;
+    height:100vh;
+}
+main{
+    display: grid;
+    grid-template-areas:
+    'a a b'
+    'a a b'
+    'c d d'
+    'c e e'
+    ;
+    gap: 10px;
+    width: 50%;
+    margin: auto;
+}
+main div{
+    padding:2em;
+    text-align: center;
+    border-radius: 2px;
+}
+.itema{
+    background-color: hsl(31, 95%, 37%);
+    grid-area: a;
+}
+.itemb{
+    background-color:#ffe600;
+    grid-area: b;
+}
+.itemc{
+    background-color:green;
+    grid-area: c;
+}
+.itemd{
+    background-color: rgb(87, 181, 243);
+    grid-area: d;
+}
+.iteme{
+    background-color: rgb(87, 181, 243);
+    grid-area: e;
+}
+    </style>
+</head>
+<body>
+     <main>
+        <div class="itema">A</div>
+        <div class="itemb">B</div>
+        <div class="itemc">C</div>
+        <div class="itemd">D</div>
+        <div class="iteme">E</div>
+     </main>
+</body>
+</html>
